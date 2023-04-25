@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./aboutUs.css">
+    <script src="./aboutUs.js" defer></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-up-o.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="./web.js" defer></script>
+</head>
+<body>
+
+<!--------------------------------- header ------------------------------->
+
+    <section class="header" id="home">
+        <nav id="navbar">
+            <a href="web.html"><img src="./img/logo.png" alt="" class="logo"></a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT US</a></li>
+                    <li><a href="./all/ourdeals.html">OUR PRODUCTS</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <div class="icons" >
+                        <input type="text" class="searchfield" placeholder="search" id="search-input">
+                        <i class="gg-search" id="search-icon"></i>
+                        <i class="gg-shopping-cart" ></i>
+                        <a href="#login"><i class="gg-profile"></i></a> 
+                        <script>// when u click or hover on the search icon u will be able to tap in the input
+
+
+                          let searchIcon = document.getElementById("search-icon");
+                          let searchInput = document.getElementById("search-input");
+
+                          searchIcon.addEventListener('click', function() {
+                            searchInput.focus();
+                          });
+
+                          searchIcon.addEventListener('mouseover', function() {
+                            searchInput.style.cursor = 'text';
+                          });
+
+                          searchIcon.addEventListener('mouseout', function() {
+                            searchInput.style.cursor = 'default';
+                          });</script>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="textbox" >
+            <h1>World Biggest Cosmetic Product Company</h1>
+            <p>We are a premium cosmetic product company that offers a range of high-quality makeup and skincare products designed to enhance your natural beauty. <br> Our products are formulated with nourishing ingredients that provide luxurious, long-lasting results</p>
+            <a href="./all/ourdeals.html" class="btn">Shop now</a>
+
+
+        </div>
+    </section>
+    <!-----------------------------------------about us ----------------------------------- -->
+    <div id="aboutus" class="aboutUsContainer">
+        <h3 class="aboutUsTitle">About Us</h3>
+        <div class="firstPartAboutUs">
+    
+           <div class="textC1">
+            <h1 class="touchTheBody">Touch The Body. Heal The Mind. Calm The Spirit.</h1>
+            <p class="firstpgdesc">Floraison Natural Beauty offers cosmetic products that correspond to every need and are suitable for all age groups. </p>
+            <div class="myDiv1">You can find us in Laouina , Sousse and Sfax </div>
+            <div class="counter">
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="42">0</span>K</p>
+                  <p class="counter-label">Happy Clients</p>
+                </div>
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="4578">0</span>+</p>
+                  <p class="counter-label">Clients Satisfied</p>
+                </div>
+                <div class="counter-item">
+                  <p class="p1"><span class="counter-value" data-count="104">0</span>+</p>
+                  <p class="counter-label">Awards</p>
+                </div>
+              </div>
+            <button class="readMore readMore1">Read More</button>
+            </div>
+           <div class="imgContainer  image1">
+            <img class="img1" src="./img/insouciante-jolie-fille-posant-bulles-savon-photo-studio-jolie-femme-au-gingembre-souriant-fond-rose.jpg" /> 
+          </div>
+         
+        </div>
+        <div class="secondPartAboutUs">
+            <div class="imgContainer image2">
+                <img class="img2" src="./img/concept-beaute-belle-femme-peau-propre-fraiche-studio-rose-visage-soins-peau-cosmetologie.jpg" /> 
+              </div>
+            <div class="textC2">
+             <h1 class="touchTheBody">We Are Committed to Make You More Beautiful</h1>
+             <p class="firstpgdesc secondp"> The choice of precious natural ingredients, mostly from organic farming and the plant kingdom, such as olive oil, prickly pear seed oil, sweet almond oil, argan oil, shea butter, fruit extracts</p>
+            
+             <button class="readMore  readMore2">Read More</button>
+             <button class="readMore shopnow">Shop Now</button>
+             <div class="myDiv2">essential oils such as geranium essential oil, orange blossom essential oil, lavender essential oil, and floral waters such as rose floral water, floral water flowers, is made after rigorous selection.</div>
+             </div>
+            
+          
+         </div>
+        <div class="thirdPart">
+            <div class="beauty1"><h2 class="beauty">Beauty</h2><p class="beautyphrase">is in the details, let us take care of them.</p></div>
+            <div class="main">
+               <video src="./img/masqueWomen.mp4" autoplay loop muted type="mp4"></video>
+               <img src="./img/mask.jpg" alt="mask" class="mask">
+               
+       
+            </div>
+   
+        </div>
+        <!-- our products  then   -->
+        <div id="blog" class="fifthPartClients">
+          <div class="hearFromClients">
+            <div>Don't Believe Us!!</div>
+            <div>Hear From Our Client's</div>
+          </div>
+          <div class="clients">
+              <div class="client">
+                <img src="./img/woman-posing-with-bathrobe-spa.jpg" alt="Client 1">
+                <p>"This face serum has made my skin look so much brighter and smoother. I'm amazed!"</p>
+                <p>Serena Decaprio </p>
+              </div>
+              <div class="client">
+                <img src="./img/fille-aux-yeux-verts-sourire-blanc-comme-neige-peint-ses-levres-du-rouge-levres-portrait-dame-beret-elegant-fond-rose.jpg "alt="Client 2">
+                <p>"I'm in love with this lipstick! It lasts all day and the color is perfect."</p>
+                <p>Annia Gomez</p>
+              </div>
+              <div class="client">
+                <img src="./img/smiley-coup-moyen-femme-tenant-bouteille.jpg" alt="Client 3">
+                <p>"This perfume makes me feel so confident and beautiful. I can't imagine wearing anything else.It's definitely a crowd-pleaser!"</p>
+                <p>Clara Martin</p>
+              </div>
+              
+              <div class="client">
+                <img src="./img/portrait-femme-blonde-apres-douche.jpg" alt="Client 4">
+                <p>"My hair has never looked better since I started using this shampoo and conditioner!"</p>
+                <p>Victoria Raphael</p>
+              </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow-left"></div>
+              <div class="arrow-right"></div>
+            </div>
+            
+        </div>
+        <div class="whatAreYouWaiting">
+          
+          <div class="moreThanWelcome2" id="login">So what are you waiting for? </div>
+          <div class="moreThanWelcome2">Come and  join us!</div>
+        </div>
+        
+
+</div>
+<!------------------------------------------- sign up ------------------------------------------->
+
+<section class="section3">
+    <div class="formulaire">
+        <form class="signin">
+            <fieldset style="background-color: rgba(252, 200, 209,0.7);border-radius: 10px;">
+                <h1 style="color:#D14D72;font-size: 32px;margin: 10px ; padding-left: 100px;">Sign up for free</h1>
+            
+              <div class="inside">
+                    <label for="name"  class="lab">First Name</label>
+                    <input type="text" placeholder="First Name" class="box">
+                    <br>
+                    <label for="Last Name"  class="lab">Last Name</label>
+                    <input type="text" placeholder="Last Name" class="box">
+                    <br>
+
+                    <label for="Email" class="lab">Email &ensp;&ensp;&nbsp;&nbsp;</label>
+                    <input type="text" placeholder="Email" class="box">
+                    <br>
+
+                   <label for="Phone" class="lab">Phone &ensp;&ensp;&nbsp; </label>
+                   <input type="text" placeholder="Phone" class="box">
+                   <br>
+
+                   <label for="">I want to recieve notifications</label> 
+                   <input type="checkbox">
+                   <br>
+                   <label for="">Sex &ensp; &ensp;</label>
+                   <label for="">
+                   <input type="radio" name="sexe">Men&ensp;
+                   </label>
+                   <label for="">
+                   <input type="radio" name="sexe">Women&ensp;
+                   </label>
+                   <br>
+                   <label for="" class="lab">Products &ensp; </label>
+                   <select name="" id="" class="product">
+                    <option value="" id="opt">Makeup</option>
+                    <option value="" id="opt">Hair Care</option>
+                    <option value="" id="opt">Skin Care</option>
+                    <option value="" id="opt">Body Care</option>
+                    <option value="" id="opt">Perfumes</option>
+                   </select>
+                    <br>
+                    <Label><strong>Any Question? <br></strong> Feel Free To Ask Us </Label>
+                    <br>
+                    <textarea name="" id="" cols="40" rows="5" class="textarea">  Enter your question here ...</textarea>
+                    <br>
+                <div>
+                    <button class="btnform">Sign up</button>
+                </div>
+                </div>           
+            </fieldset>
+        </form>
+    </div>
+    <form class="login">
+        <fieldset style="background-color: rgba(252, 200, 209,0.7); border-radius: 10px;">
+            <h1 style="color:#D14D72;font-size: 32px;margin: 10px ;padding-left: 120px;">Log in</h1>
+        <div class="inside">
+            <label for="Email" class="lab">Email</label>
+            <input type="text" placeholder="Email" class="box" id="email">
+            <br>
+            <label for="password" class="lab">Password</label>
+            <input type="text" placeholder="Password" class="box">
+            <br>
+            <div>
+                <button class="btnform" >Login</button>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+
+  
+</section>
+
+
+
+
+
+
+<!--------------------------------------------- Footer ----------------------------------------->
+    <footer id="contact" class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">OUR PRODUCTS</a></li>
+                        <li><a href="#">OUR OFFERS</a></li>
+                        <li><a href="#">SHOP NOW</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">makeup</a></li>
+                        <li><a href="#">hair care</a></li>
+                        <li><a href="#">skin care</a></li>
+                        <li><a href="#">body care </a></li>
+                        <li><a href="#">perfumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="puce">
+                        <li>+216 55 123 123</li>
+                        <li>+216 99 123 123</li>
+                        <li>+216 22 123 123</li>
+                    </ul>
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+          <p>&copy;<script>document.write(new Date().getFullYear())</script>  All Rights Reserved.</p>
+        </div>
+        <i class="gg-arrow-up-o" style="transform: scale(2);color: #D14D72;" id="scroll" ></i>
+        
+   </footer>
+
+   </body>
+   <script>
+   document.getElementById("scroll").addEventListener("click", 
+   function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  </script>
+  <script>
+const navbar = document.querySelector('#navbar');
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add('nav-pink');
+    navbar.classList.remove('nav-transparent');
+  } else {
+    navbar.classList.add('nav-transparent');
+    navbar.classList.remove('nav-pink');
+  }
+});
+
+  </script>
+  
+</html>
